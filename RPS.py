@@ -166,7 +166,7 @@ pcchose=Label()     #This Label will show what pc opted or chose
 #Frame for first window of game
 f1=Frame(root)
 img=Image.open('rps.png')
-img=img.resize((650,450),Image.ANTIALIAS)
+img = img.resize((650, 450), Image.Resampling.LANCZOS)
 pic=ImageTk.PhotoImage(img)
 Lab=Label(f1,image=pic)
 Lab.pack()
